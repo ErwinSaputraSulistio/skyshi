@@ -1,13 +1,105 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
 body {
+  background: #F4F4F4;
+  font-family: "Poppins";
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  width: 100vw;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* HEADER */
+.header {
+  align-items: center;
+  background-color: #16ABF8;
+  color: white;
+  display: flex;
+  height: 105px;
+  justify-content: center;
+}
+.header-title {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* CONTAINER */
+.container {
+  width: 1000px;
+}
+
+/* ACTIVITY LIST */
+.todo-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 43px 0 55px;
+}
+.activity-title {
+  font-size: 36px;
+  font-weight: 700;
+}
+.button {
+  border-radius: 45px;
+  border: 0;
+  padding: 15px 45px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.button:hover, .activity-body:hover, .activity-item-delete-button:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+.add-button {
+  background: #16ABF8;
+  color: white;
+}
+.dashboard-content {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* ACTIVITY DETAIL */
+.todo-title {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 335px;
+}
+.icon-back {
+  background-image: url("https://ivan-todo-devrank.netlify.app/static/media/icon-back.0fe266ef.svg");
+  height: 32px;
+  width: 32px;
+}
+.title-detail {
+  color: #212529;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+/* ACTIVITY CARD */
+.activity-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgb(0 0 0 / 15%);
+  flex: 0 0 auto;
+  height: 200px;
+  margin: 10px;
+  padding: 22px 27px;
+  width: 17.5%;
+}
+.activity-body {
+  height: 180px;
+}
+.activity-item-title {
+  font-size: 18px;
+  font-weight: 700;
+}
+.card-footer {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.activity-item-date {
+  color: #888;
+  font: 16px;
 }
